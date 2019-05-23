@@ -275,10 +275,10 @@ workflows:
 
   all:
     jobs:
-      - shellcheck
+      # - shellcheck
       - lint
       - build
-      - test
+      # - test
       - install-cni:
           requires:
             - build
